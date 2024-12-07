@@ -7,9 +7,9 @@ public class gradeclaculator {
 
         System.out.print("Enter the number of subjects: ");
         int numSubjects = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
-        // Arrays to store subject names and marks
+        
         String[] subjects = new String[numSubjects];
         double[] marks = new double[numSubjects];
 
@@ -32,13 +32,9 @@ public class gradeclaculator {
         }
 
         double totalMarks = calculateTotalMarks(marks);
-
         double averagePercentage = calculateAveragePercentage(totalMarks, numSubjects);
-
         String grade = calculateGrade(averagePercentage);
-
         displayResults(subjects, marks, totalMarks, numSubjects, averagePercentage, grade);
-
         scanner.close();
     }
 
